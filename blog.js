@@ -31,7 +31,7 @@ $(document).ready(function(){
     $.ajax({
         url:queryURL2,
         method:"GET"
-    }).then(function(){
-        
-    })
+    }).then(function(response){
+        $(".card-text2").text(response.articles[0].description)
+    });
 })
